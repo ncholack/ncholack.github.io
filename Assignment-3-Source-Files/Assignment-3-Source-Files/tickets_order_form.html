@@ -60,17 +60,22 @@
 
 
 					<p>Ordering Information</p>
-					<select name="event">
+					<label for="event">Event:</label>
+					<select name="event" id="event">
 						<option value="Cookie Decoration Contest">Cookie Decoration Contest</option>
 						<option value="Tree Decoration Contect">Tree Decoration Contect</option>
 						<option value="Gift of light Ride-Along">Gift of light Ride-Along</option>
 						<option value="Breakfast with Santa">Breakfast with Santa</option>
 					</select><br>
+					<label for="order_type">Order Type:</label>
 					<select name="order_type" id="Order Type">
 						<option value="Member Package">Member Package</option>
 						<option value="Donor Package">Donor Package</option>
 						<option value="Single Tickets">Single Tickets</option>
 					</select><br>
+					<label for="num_of_tickits">Number of Tickets:</label>
+					<input type="text" name="num_of_tickets" id="num_of_tickets" placeholder="Number of single tickets"><br>
+
 					
 					<p>Payment Information</p>
 					<input type="radio" id="bill_me" name="payment_info" value="bill_me">
@@ -88,7 +93,7 @@
 					
 					<label for="card#">Card Number:</label>
 					<input type="text" name="card#" id="card#" placeholder="16 digits"><br>
-					
+
 					<label for="expiration_date">Expiration Date:</label>
 					<select name="expiration_date" id="month">
 						<option value="Jan">January</option>
@@ -113,6 +118,10 @@
 						<option value="2026">2026</option>
 						<option value="2027">2027</option>
 					</select>
+
+					<p>Submit Your Order</p>
+					<input type="submit" name="checkout" value="Checkout">
+					<input type="reset" name="reset_form" value="Reset">
 				</form>
 
 				
